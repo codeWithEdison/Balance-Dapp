@@ -19,7 +19,8 @@ export default function App() {
 
   const connectWallet = async () => {
     try {
-      const result = await getBalanceContract();
+      const result = await getBalanceContract(); 
+      let developer_name = "code with edison";
       if (result) {
         setContract(result.contract);
         setUserAddress(result.userAddress);

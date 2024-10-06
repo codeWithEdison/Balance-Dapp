@@ -100,7 +100,7 @@ export default function App() {
               <WalletIcon className="w-8 h-8 text-white" />
             </div>
             <h1 className="text-3xl font-extrabold ml-3 bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text">
-              Balance DApp
+              IKofi Ap
             </h1>
           </div>
 

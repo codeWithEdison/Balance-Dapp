@@ -1,8 +1,7 @@
-import  { useState, useEffect, useContext, useLayoutEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { WalletIcon, ArrowUpCircleIcon, ArrowDownCircleIcon, ActivityIcon } from 'lucide-react';
 import { getBalanceContract, getContractBalance, getUserBalance, deposit, withdraw } from './utils/balanceContract';
 import { Contract } from 'ethers';
-import { UserCheckIcon, User2 } from 'lucide-react';
 
 export default function App() {
   const [amount, setAmount] = useState<string>('');
@@ -20,8 +19,7 @@ export default function App() {
 
   const connectWallet = async () => {
     try {
-      const result = await getBalanceContract(); 
-      let developer_name = "code with edison";
+      const result = await getBalanceContract();
       if (result) {
         setContract(result.contract);
         setUserAddress(result.userAddress);
@@ -102,7 +100,7 @@ export default function App() {
               <WalletIcon className="w-8 h-8 text-white" />
             </div>
             <h1 className="text-3xl font-extrabold ml-3 bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text">
-              IKofi Ap
+              Balance DApp
             </h1>
           </div>
 

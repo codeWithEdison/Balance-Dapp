@@ -1,7 +1,8 @@
-import  { useState, useEffect } from 'react';
+import  { useState, useEffect, useContext, useLayoutEffect } from 'react';
 import { WalletIcon, ArrowUpCircleIcon, ArrowDownCircleIcon, ActivityIcon } from 'lucide-react';
 import { getBalanceContract, getContractBalance, getUserBalance, deposit, withdraw } from './utils/balanceContract';
 import { Contract } from 'ethers';
+import { UserCheckIcon, User2 } from 'lucide-react';
 
 export default function App() {
   const [amount, setAmount] = useState<string>('');

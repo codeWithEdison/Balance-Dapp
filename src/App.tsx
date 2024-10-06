@@ -99,8 +99,8 @@ export default function App() {
             <div className="bg-gradient-to-r from-purple-600 to-pink-500 p-3 rounded-2xl">
               <WalletIcon className="w-8 h-8 text-white" />
             </div>
-            <h1 className="text-3xl font-extrabold ml-3 bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text">
-              Balance DApp
+            <h1 className="text-3xl  font-extrabold ml-3 bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text">
+              yor Balance DApp 
             </h1>
           </div>
 
